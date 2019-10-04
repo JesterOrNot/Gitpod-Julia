@@ -9,3 +9,6 @@ ports:
 tasks:
 - init: echo 'init script' # runs during prebuild
   command: echo 'start script'
+vscode:
+  extensions:
+    - julialang.language-julia@0.12.3:lgRyBd8rjwUpMGG0C5GAig==
