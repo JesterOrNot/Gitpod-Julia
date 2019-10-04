@@ -7,4 +7,4 @@ RUN mkdir -p /home/gitpod/.julia && cd /home/gitpod/.julia && wget -c https://ju
 RUN mv /home/gitpod/.julia/julia-1.0.1/bin/julia /usr/bin
 RUN mv /home/gitpod/.julia/julia-1.0.1/lib/libjulia.so /usr/lib
 RUN mv /home/gitpod/.julia/julia-1.0.1/lib/libjulia.so.1 /usr/lib
-RUN mv /home/gitpod/.julia/julia-1.0.1/lib/libjulia.so.0 /usr/lib
+RUN mv /home/gitpod/.julia/julia-1.0.1/lib/libjulia.so.1.0 /usr/lib
