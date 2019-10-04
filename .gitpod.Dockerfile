@@ -2,11 +2,7 @@ FROM gitpod/workspace-full
 
 USER root
 
-# Install custom tools, runtime, etc. using apt-get
-# For example, the command below would install "bastet" - a command line tetris clone:
-#
-# RUN apt-get update \
-#    && apt-get install -y bastet \
-#    && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
-#
-# More information: https://www.gitpod.io/docs/42_config_docker/
+RUN sudo apt-get update && sudo apt -y install build-essential
+RUN wget https://julialang-s3.julialang.org/bin/linux/x64/1.0/julia-1.0.1-linux-x86_64.tar.gz
+RUN tar xvfz julia-1.0.1-linux-x86_64.tar.gz
+RUN sudo ln -s /home/ubuntu/julia-1.0.1/bin/julia /usr/local/bin/julia
