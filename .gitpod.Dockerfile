@@ -16,3 +16,6 @@ RUN sudo apt-get update \
         pkg-config \
         julia \
     && sudo rm -rf /var/lib/apt/lists/*
+
+# Give control back to Gitpod Layer
+USER root
